@@ -1,1 +1,15 @@
+A = input("Введіть першу фразу:")
+B = input("Введіть другу фразу:")
+
+a = set(A.upper())
+b = set(B.upper())
+
+print(a)
+print(b)
+
+if (a.issuperset(b)):
+    print("Із літер фрази \"" + A + "\" можливо скласти іншу \"" + B + "\".")
+
+if not (a.issuperset(b)):
+    print("Із літер фрази \"" + A + "\" не можливо скласти іншу \"" + B + "\".")
 
